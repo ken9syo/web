@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>伝言板。Dengon-Ban</title>
+    <script>
+function 伝言する() {
+  if (入力内容.value === "") {
+    alert("内容が入力されていません");
+  } else {
+    伝言エリア.innerText = 入力内容.value;
+    alert("伝言を承りました\u3002料金は20万円です\u3002");
+  }
+}
+</script>
+  </head>
+  <body>
+    <h1>伝言板だよ</h1>
+    <p>↓伝言エリア↓</p>
+    <p id="伝言エリア">伝言はまだないよ</p>
+    <input id="入力内容"><button onclick="伝言する();">送信する</button>
+  </body>
+</html>
